@@ -72,19 +72,20 @@ a.snake-link:hover {
 }
 
 .snake-snakebody-alive {
-   background-image: url('./images/dark-snakeblock.png');
+   background-image: url('images/dark-snake.png');
 }
 .snake-snakebody-dead {
-   background-image: url('./images/dead-dark-snakeblock.png');
+   background-image: url('images/dead-dark-snakeblock.png');
 }
 
 .snake-food-block {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-image: url('./images/fruit.png');
     border: 2px solid #3E2E44;
     position: absolute;
 }
+
 
 .snake-playing-field {
     margin: 0px;
@@ -126,7 +127,7 @@ a.snake-link:hover {
     padding: 8px;
     margin: 0px;
     background-color: black;
-    color: #938996;
+    color: #94968950;
     font-family: Verdana, arial, helvetica, sans-serif;
     font-size: 14px;
     position: absolute;

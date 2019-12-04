@@ -125,7 +125,7 @@ SNAKE.Snake = SNAKE.Snake || (function () {
             rowShift = [-1, 0, 1, 0],
             xPosShift = [],
             yPosShift = [],
-            snakeSpeed = 150,
+            snakeSpeed = 120,
             isDead = false,
             isPaused = false;
 
@@ -137,12 +137,12 @@ SNAKE.Snake = SNAKE.Snake || (function () {
         if (modeDropdown) {
             modeDropdown.addEventListener('change', function (evt) {
                 evt = evt || {};
-                var val = evt.target ? parseInt(evt.target.value) : 150;
+                var val = evt.target ? parseInt(evt.target.value) : 120;
 
                 if (isNaN(val)) {
-                    val = 150;
+                    val = 120;
                 } else if (val < 50) {
-                    val = 150;
+                    val = 120;
                 }
 
                 snakeSpeed = val;
